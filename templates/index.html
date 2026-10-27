@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Fuel Price Analytics</title>
+  <meta name="description" content="Global fuel prices, taxation and trend analysis from 2020 to 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="creator-credit">Created by Krishnakant Rathi</div>
+
+<header class="navbar" id="navbar">
+  <a class="brand" href="#hero">Global Fuel Price Analytics</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  <nav id="navMenu">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#overview">Project Overview</a>
+    <a href="#dashboard">Visualizations</a>
+    <a href="#story">Data Story</a>
+    <a href="#insights">Key Insights</a>
+    <a href="#project-info">Project Information</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="eyebrow">DATA ANALYTICS • 2020–2026</span>
+    <h1>Global Fuel Prices<br><span>& Taxation Trends</span></h1>
+    <p>Explore global fuel prices, taxation, subsidies and crude-oil trends through an interactive Tableau dashboard.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#dashboard">Explore Dashboard</a>
+      <a class="btn ghost" href="#story">View Story</a>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll to explore ↓</div>
+</section>
+
+<section class="section" id="about">
+  <div class="section-heading">
+    <span class="kicker">ABOUT THE PROJECT</span>
+    <h2>Making sense of global fuel prices</h2>
+    <p>This project explores how petrol, diesel and LPG prices vary across countries and change over time. It brings fuel prices together with taxation, subsidies, income levels and Brent crude oil to help explain the patterns seen in the data.</p>
+  </div>
+  <div class="about-detail-grid">
+    <article class="about-detail-card">
+      <span class="number">01 · PURPOSE</span>
+      <h3>What are we trying to understand?</h3>
+      <p>Identify broad price movements from 2020 to 2026 and compare how fuel costs differ between countries, regions and fuel types.</p>
+    </article>
+    <article class="about-detail-card">
+      <span class="number">02 · WHAT WE COMPARE</span>
+      <h3>Prices and possible influences</h3>
+      <p>Petrol, diesel, LPG, Brent crude oil and tax percentages are reviewed alongside subsidy levels and income groups. These factors provide context; they do not by themselves prove cause and effect.</p>
+    </article>
+    <article class="about-detail-card">
+      <span class="number">03 · HOW TO EXPLORE</span>
+      <h3>From overview to findings</h3>
+      <p>Start with the project overview, explore the interactive Tableau dashboard, then follow the data story and key insights for a guided summary.</p>
+    </article>
+  </div>
+  <div class="stat-grid about-stat-grid">
+    <div class="stat-card"><strong>2020–2026</strong><span>Analysis period</span></div>
+    <div class="stat-card"><strong>84</strong><span>Countries represented in the project dataset</span></div>
+    <div class="stat-card"><strong>3</strong><span>Fuel types: petrol, diesel and LPG</span></div>
+    <div class="stat-card"><strong>Tableau</strong><span>Interactive data exploration</span></div>
+  </div>
+</section>
+
+<section class="section alt" id="overview">
+  <div class="section-heading">
+    <span class="kicker">PROJECT OVERVIEW</span>
+    <h2>Global Fuel Price Analytics</h2>
+    <p>This overview introduces the dataset, the main measures and the steps used to explore global fuel prices and taxation from 2020 to 2026.</p>
+  </div>
+
+  <div class="overview-timeline">
+    <article class="overview-step">
+      <span class="timeline-dot"></span>
+      <div class="overview-step-content">
+        <span class="overview-label">GLOBAL FUEL PRICE ANALYTICS</span>
+        <h3>Project Summary</h3>
+        <p class="overview-italic">A data analytics project focused on comparing global fuel prices and exploring taxation, subsidy and crude-oil price trends using Tableau visualizations.</p>
+        <ul>
+          <li><strong>Dataset:</strong> Global Fuel Prices</li>
+          <li><strong>Time period:</strong> 2020–2026</li>
+          <li><strong>Tools:</strong> Tableau Public, HTML, CSS, JavaScript and Flask</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="overview-step">
+      <span class="timeline-dot"></span>
+      <div class="overview-step-content">
+        <span class="overview-label">GLOBAL FUEL PRICES DATASET</span>
+        <h3>Dataset Details</h3>
+        <p><strong>2020–2026</strong></p>
+        <p class="overview-italic">84 countries across multiple regions and income levels.</p>
+        <p>The dataset contains date, country, region, income level, subsidy level, petrol price, diesel price, LPG price, Brent crude price and tax percentage.</p>
+      </div>
+    </article>
+
+    <article class="overview-step">
+      <span class="timeline-dot"></span>
+      <div class="overview-step-content">
+        <span class="overview-label">CORE MEASURES</span>
+        <h3>Fuel and Tax Indicators</h3>
+        <p class="overview-italic">Compare average petrol, diesel and LPG prices with tax percentages and Brent crude-oil prices.</p>
+        <p>These measures help explore patterns across countries and over time. Taxation and subsidies are treated as analytical context, not proof that one factor alone causes a price change.</p>
+      </div>
+    </article>
+
+    <article class="overview-step">
+      <span class="timeline-dot"></span>
+      <div class="overview-step-content">
+        <span class="overview-label">STEP 1</span>
+        <h3>Analysis Workflow — Data Exploration</h3>
+        <p class="overview-italic">Dataset review and preparation</p>
+        <ul>
+          <li>Review fuel-price records and the available fields.</li>
+          <li>Compare prices across countries, regions and income groups.</li>
+          <li>Analyze changes in fuel prices and taxation over time.</li>
+          <li>Present findings using interactive Tableau visualizations.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="overview-step">
+      <span class="timeline-dot"></span>
+      <div class="overview-step-content">
+        <span class="overview-label">STEP 2</span>
+        <h3>Visualization and Interpretation</h3>
+        <p class="overview-italic">Tableau dashboard and data story</p>
+        <ul>
+          <li>Use maps to compare petrol and diesel prices across countries.</li>
+          <li>Use trend lines to examine petrol, diesel, LPG and Brent crude prices.</li>
+          <li>Compare average tax percentages across regions and countries.</li>
+          <li>Summarize the findings in a dashboard and guided data story.</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+  <p class="dataset-note">Note: the included project dataset is for analytical demonstration and should not be treated as verified official market statistics.</p>
+</section>
+
+<section class="section story" id="story">
+  <div class="section-heading">
+    <span class="kicker">DATA STORY · 2020–2026</span>
+    <h2>Understanding Global Fuel Prices and Taxation</h2>
+    <p>Follow the story from global price movements to country comparisons and taxation. Select each chapter to read the main points and explore its Tableau visualization.</p>
+  </div>
+  <div class="story-layout">
+    <div class="story-nav" id="storyNav">
+      <button class="story-tab active" data-story="0">01 · Global Trend</button>
+      <button class="story-tab" data-story="1">02 · Fuel Price Comparison Across Top 3 Countries</button>
+      <button class="story-tab" data-story="2">03 · Taxation</button>
+      <button class="story-tab" data-story="3">04 · Country Differences</button>
+      <button class="story-tab" data-story="4">05 · What the comparisons show</button>
+      <button class="story-tab" data-story="5">06 · Reading the data carefully</button>
+    </div>
+    <div class="story-panel">
+      <div class="story-slide active">
+        <span>CHAPTER 01</span><h3>Global Trend</h3>
+        <p>Start with the overall movement in fuel prices from 2020 to 2026. This view provides a broad picture before looking at individual fuels or countries.</p>
+        <ul><li>Track how average prices change across the analysis period.</li><li>Compare petrol, diesel and LPG trends where the chart provides them.</li><li>Look for periods when prices move together or begin to differ.</li><li>Use the trend as a starting point, then explore possible context such as crude-oil prices and taxation.</li></ul>
+        <div class="story-viz"><iframe title="Global price movement Tableau visualization" loading="lazy" src="https://public.tableau.com/views/GlobalAverageFuelPricesTrend2020-2026DashboardDone/Globalpricemovement?:showVizHome=no&:embed=true"></iframe></div>
+        <p class="story-link"><a href="https://public.tableau.com/app/profile/krishnakant.rathi/viz/GlobalAverageFuelPricesTrend2020-2026DashboardDone/Globalpricemovement?publish=yes" target="_blank" rel="noopener">Open this story in Tableau ↗</a></p>
+      </div>
+      <div class="story-slide">
+        <span>CHAPTER 02</span><h3>Fuel Price Comparison Across Top 3 Countries</h3>
+        <p>Compare average petrol, diesel and LPG prices across the three countries shown in the worksheet.</p>
+        <ul><li>Identify which fuel types have higher or lower prices within each country.</li><li>Compare the same fuel across the three countries.</li><li>Notice whether the price gap is similar across petrol, diesel and LPG.</li><li>Use the worksheet’s labels and units when interpreting differences; do not assume that a higher price alone means a country has higher taxes.</li></ul>
+        <div class="story-viz"><iframe title="Fuel Price Comparison Across Top 3 Countries Tableau visualization" loading="lazy" src="https://public.tableau.com/views/GlobalAverageFuelPricesTrend2020-2026DashboardDone/FuelPriceComparisonAcrossTop3Countries?:showVizHome=no&:embed=true"></iframe></div>
+        <p class="story-link"><a href="https://public.tableau.com/app/profile/krishnakant.rathi/viz/GlobalAverageFuelPricesTrend2020-2026DashboardDone/FuelPriceComparisonAcrossTop3Countries?publish=yes" target="_blank" rel="noopener">Open this story in Tableau ↗</a></p>
+      </div>
+      <div class="story-slide">
+        <span>CHAPTER 03</span><h3>Taxation</h3>
+        <p>Explore how tax percentages vary across the countries or groups included in the worksheet.</p>
+        <ul><li>Compare the tax levels displayed for different countries or regions.</li><li>Consider how taxes may contribute to the final price paid by consumers.</li><li>Remember that prices can also be affected by subsidies, distribution costs, currency changes and local policies.</li><li>Treat the chart as evidence of patterns, not proof that tax is the only cause of a price difference.</li></ul>
+        <div class="story-viz"><iframe title="Taxation Tableau visualization" loading="lazy" src="https://public.tableau.com/views/GlobalAverageFuelPricesTrend2020-2026DashboardDone/Taxation?:showVizHome=no&:embed=true"></iframe></div>
+        <p class="story-link"><a href="https://public.tableau.com/app/profile/krishnakant.rathi/viz/GlobalAverageFuelPricesTrend2020-2026DashboardDone/Taxation?publish=yes" target="_blank" rel="noopener">Open this story in Tableau ↗</a></p>
+      </div>
+      <div class="story-slide">
+        <span>CHAPTER 04</span><h3>Country and Regional Differences</h3>
+        <p>Look beyond the global average to see how fuel prices differ by location and group.</p>
+        <ul><li>Compare countries and regions using the measures available in the worksheet.</li><li>Check whether petrol, diesel and LPG show similar geographic patterns.</li><li>Use filters and labels to focus on specific places or categories.</li><li>Consider regional context before drawing conclusions from a single country or average.</li></ul>
+        <div class="story-viz"><iframe title="Country and regional differences Tableau visualization" loading="lazy" src="https://public.tableau.com/views/GlobalAverageFuelPricesTrend2020-2026DashboardDone/Countryandregionaldifferences?:showVizHome=no&:embed=true"></iframe></div>
+        <p class="story-link"><a href="https://public.tableau.com/app/profile/krishnakant.rathi/viz/GlobalAverageFuelPricesTrend2020-2026DashboardDone/Countryandregionaldifferences?publish=yes" target="_blank" rel="noopener">Open this story in Tableau ↗</a></p>
+      </div>
+      <div class="story-slide">
+        <span>CHAPTER 05</span><h3>What the comparisons show</h3>
+        <p>Bring the four views together to form a balanced overview of the dataset.</p>
+        <ul><li>Global trends show when average fuel prices change over time.</li><li>The top-three-country comparison highlights differences between fuel types and selected countries.</li><li>The taxation view adds policy context to price comparisons.</li><li>The country and regional view shows why a single global average cannot describe every market.</li><li>Use the interactive dashboard below to investigate questions raised by these patterns.</li></ul>
+      </div>
+      <div class="story-slide">
+        <span>CHAPTER 06</span><h3>Reading the data carefully</h3>
+        <p>A clear story depends on comparing like with like and being transparent about the limits of the data.</p>
+        <ul><li>Check the time period, units, labels and filters before comparing values.</li><li>Distinguish averages from individual observations.</li><li>Do not treat correlation as proof of cause and effect.</li><li>Interpret taxation and subsidies alongside other market factors.</li><li>The dataset is intended for project analysis and should not be treated as verified official market statistics.</li></ul>
+      </div>
+      <div class="story-controls"><button id="prevStory">← Previous</button><span id="storyCounter">1 / 6</span><button id="nextStory">Next →</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section dashboard-section" id="dashboard">
+  <div class="section-heading center">
+    <span class="kicker">INTERACTIVE DASHBOARD</span>
+    <h2>Global Fuel Prices and Taxation Trends</h2>
+    <p>Explore the full interactive Tableau dashboard below. It is wider and taller for easier viewing; use the link above if you want to open it directly in Tableau.</p>
+  </div>
+
+  <div class="tableau-shell">
+    <div class="tableau-toolbar">
+      <span>TABLEAU PUBLIC</span>
+      <a href="https://public.tableau.com/app/profile/krishnakant.rathi/viz/GlobalAverageFuelPricesTrend2020-2026DashboardDone/GlobalFuelPricesandTaxationTrends2020-2026?publish=yes" target="_blank" rel="noopener">Open in Tableau ↗</a>
+    </div>
+    <div class="tableau-frame">
+      <iframe
+        src="https://public.tableau.com/views/GlobalAverageFuelPricesTrend2020-2026DashboardDone/GlobalFuelPricesandTaxationTrends2020-2026?:showVizHome=no&:embed=true"
+        title="Global Fuel Prices and Taxation Trends 2020–2026"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section alt" id="insights">
+  <div class="section-heading">
+    <span class="kicker">KEY INSIGHTS</span>
+    <h2>What the analysis helps you explore</h2>
+  </div>
+
+  <div class="insight-grid">
+    <article class="insight-card">
+      <div class="icon">↗</div>
+      <h3>Fuel Price Differences</h3>
+      <p>Compare average petrol, diesel and LPG prices between countries and across the selected period.</p>
+    </article>
+    <article class="insight-card">
+      <div class="icon">%</div>
+      <h3>Taxation Patterns</h3>
+      <p>Explore how tax percentages vary between countries and regions in the dataset.</p>
+    </article>
+    <article class="insight-card">
+      <div class="icon">≈</div>
+      <h3>Crude Oil Context</h3>
+      <p>Use Brent crude-price movements as context when examining fuel-price trends.</p>
+    </article>
+    <article class="insight-card">
+      <div class="icon">◎</div>
+      <h3>Country Comparison</h3>
+      <p>Interact with Tableau filters to investigate differences at country and regional level.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="project-info">
+  <div class="section-heading">
+    <span class="kicker">PROJECT INFORMATION</span>
+    <h2>Tools & scope</h2>
+  </div>
+  <div class="info-table">
+    <div><span>Project</span><strong>Global Fuel Price Analytics</strong></div>
+    <div><span>Period</span><strong>2020–2026</strong></div>
+    <div><span>Visualization</span><strong>Tableau Public</strong></div>
+    <div><span>Frontend</span><strong>HTML · CSS · JavaScript</strong></div>
+    <div><span>Backend</span><strong>Flask / Python</strong></div>
+    <div><span>Purpose</span><strong>Educational Data Analytics Project</strong></div>
+  </div>
+</section>
+</main>
+
+
+<section class="section reviews-section" id="reviews">
+  <div class="section-heading">
+    <span class="kicker">FEEDBACK</span>
+    <h2>Write a Review</h2>
+    <p>Share your feedback about the website, story and interactive visualizations.</p>
+  </div>
+  <div class="reviews-layout">
+    <form id="reviewForm" class="review-form">
+      <label for="reviewName">Name</label>
+      <input id="reviewName" name="name" type="text" placeholder="Your name" maxlength="80" required>
+      <label for="reviewEmail">Email</label>
+      <input id="reviewEmail" name="email" type="email" placeholder="you@example.com" maxlength="160" required>
+      <label for="reviewText">Review</label>
+      <textarea id="reviewText" name="review" rows="5" placeholder="What did you think of the project?" maxlength="1200" required></textarea>
+      <button class="btn primary" type="submit">Submit Review</button>
+    </form>
+    <div class="review-results">
+      <h3>Visitor Feedback</h3>
+      <p class="review-sample-note">A few example reviews to preview the feedback section.</p>
+      <p class="empty-reviews" id="emptyReviews" hidden>No reviews yet. Be the first to share feedback.</p>
+      <div id="reviewList" class="review-list" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <strong>Global Fuel Price Analytics</strong>
+    <p>An educational data analytics website exploring global fuel prices and taxation trends.</p>
+  </div>
+  <a href="#hero">Back to top ↑</a>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
