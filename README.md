@@ -22,4 +22,14 @@ The website embeds the supplied public Tableau view:
 
 https://public.tableau.com/app/profile/krishnakant.rathi/viz/GlobalAverageFuelPricesTrend2020-2026DashboardDone/GlobalFuelPricesandTaxationTrends2020-2026?publish=yes
 
-If you later publish a separate Tableau Story, replace the iframe `src` in `templates/index.html` with the Story view URL.
+## Project Documentation
+
+All project links are provided in the **Project Template PDFs** folder, including:
+
+- Tableau dashboard links
+- - Tableau story links
+  - - Demo video link
+    - - Other project submission details
+     
+      - Please refer to the PDFs in that folder for the complete set of links.
+ 
