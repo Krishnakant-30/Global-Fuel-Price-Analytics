@@ -27,7 +27,7 @@ https://public.tableau.com/app/profile/krishnakant.rathi/viz/GlobalAverageFuelPr
 All project links are provided in the **Project Template PDFs** folder, including:
 
 - Tableau dashboard links
-- - Tableau story links
+- - 4 Tableau story links(1. Global Fuel Trend, 2. Fuel price comparision across Top 3 countries, 3. Taxation , 4. Country and Regional Differences)
   - - Demo video link
     - - Other project submission details
      
